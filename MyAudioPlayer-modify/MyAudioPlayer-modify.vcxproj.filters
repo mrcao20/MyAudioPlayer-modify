@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="McTcpClient.cpp">
+      <Filter>Source Files\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="McSingleApplication.cpp">
+      <Filter>Source Files\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="McOutput.cpp">
+      <Filter>Source Files\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="McGlobal.cpp">
+      <Filter>Source Files\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="McAudioPlayerWidget.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="McAudioPlayer.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="McSlider.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="McNetTools.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="McDBTools.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="McMusicMan.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="McTableView.cpp">
+      <Filter>Source Files\Player\View\SongView</Filter>
+    </ClCompile>
+    <ClCompile Include="McSongModel.cpp">
+      <Filter>Source Files\Player\View\SongView</Filter>
+    </ClCompile>
+    <ClCompile Include="McSonglistModel.cpp">
+      <Filter>Source Files\Player\View\SonglistView</Filter>
+    </ClCompile>
+    <ClCompile Include="McSongDelegate.cpp">
+      <Filter>Source Files\Player\View\SongView</Filter>
+    </ClCompile>
+    <ClCompile Include="McSonglistDelegate.cpp">
+      <Filter>Source Files\Player\View\SonglistView</Filter>
+    </ClCompile>
+    <ClCompile Include="McListView.cpp">
+      <Filter>Source Files\Player\View\PlaylistView</Filter>
+    </ClCompile>
+    <ClCompile Include="McPlaylistModel.cpp">
+      <Filter>Source Files\Player\View\PlaylistView</Filter>
+    </ClCompile>
+    <ClCompile Include="McPlaylistDelegate.cpp">
+      <Filter>Source Files\Player\View\PlaylistView</Filter>
+    </ClCompile>
+    <ClCompile Include="McQQApi.cpp">
+      <Filter>Source Files\MusicApi</Filter>
+    </ClCompile>
+    <ClCompile Include="McYApi.cpp">
+      <Filter>Source Files\MusicApi</Filter>
+    </ClCompile>
+    <ClCompile Include="McMusicApiFactory.cpp">
+      <Filter>Source Files\MusicApi</Filter>
+    </ClCompile>
+    <ClCompile Include="LyricWidget.cpp">
+      <Filter>Source Files\Player\Lyric</Filter>
+    </ClCompile>
+    <ClCompile Include="LyricLabel.cpp">
+      <Filter>Source Files\Player\Lyric</Filter>
+    </ClCompile>
+    <ClCompile Include="UntranslatedLyricWidget.cpp">
+      <Filter>Source Files\Player\Lyric</Filter>
+    </ClCompile>
+    <ClCompile Include="TranslatedLyricWidget.cpp">
+      <Filter>Source Files\Player\Lyric</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Header Files\Global">
+      <UniqueIdentifier>{6265b8e4-e27a-4276-aae9-871a09b408f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Global">
+      <UniqueIdentifier>{6d9d9135-bcd6-4c20-82f3-d0fbb746a97d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player">
+      <UniqueIdentifier>{923c37b5-88e3-449d-8684-6c0d019fda5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{96f84447-dcdd-4182-b583-6da48d7e1860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tools">
+      <UniqueIdentifier>{3b569056-ec04-4d84-b809-c64b7aaf4d39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tools">
+      <UniqueIdentifier>{01435caa-f0bd-4c70-b6a0-2d5bcae754c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player\View">
+      <UniqueIdentifier>{e563cc95-a196-4137-b0ef-4af571d300a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player\View\SongView">
+      <UniqueIdentifier>{d6bab8fb-9a7d-4442-b739-9560c8e4e96a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player\View">
+      <UniqueIdentifier>{9e603747-f959-4f38-ac81-620116ba4566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player\View\SongView">
+      <UniqueIdentifier>{9ad40b19-4557-45e1-bf8c-a9a9d540bf3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player\View\SonglistView">
+      <UniqueIdentifier>{ec0d15dd-4575-4e0e-85ed-054d7abc2600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player\View\SonglistView">
+      <UniqueIdentifier>{670bce4a-6ad6-410d-bfee-228b2cdd4c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player\View\PlaylistView">
+      <UniqueIdentifier>{4c29ffff-c90f-48d9-8ce1-bd3f21e2d2a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player\View\PlaylistView">
+      <UniqueIdentifier>{96592add-403e-4aa9-b934-e170979afdec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MusicApi">
+      <UniqueIdentifier>{ab71cb14-f9c8-49a7-9f7b-26f63053e8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MusicApi">
+      <UniqueIdentifier>{de35d7cc-0e07-4fab-b17b-c6ff8dbd9ac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player\Lyric">
+      <UniqueIdentifier>{eeb9746e-2120-4b63-99a1-babd8ec15366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player\Lyric">
+      <UniqueIdentifier>{81037550-0fde-40b5-b7dd-c3521219e3ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="McTcpClient.h">
+      <Filter>Header Files\Global</Filter>
+    </QtMoc>
+    <QtMoc Include="McSingleApplication.h">
+      <Filter>Header Files\Global</Filter>
+    </QtMoc>
+    <QtMoc Include="McOutput.h">
+      <Filter>Header Files\Global</Filter>
+    </QtMoc>
+    <QtMoc Include="McAudioPlayerWidget.h">
+      <Filter>Header Files\Player</Filter>
+    </QtMoc>
+    <QtMoc Include="McAudioPlayer.h">
+      <Filter>Header Files\Player</Filter>
+    </QtMoc>
+    <QtMoc Include="McSlider.h">
+      <Filter>Header Files\Player</Filter>
+    </QtMoc>
+    <QtMoc Include="McNetTools.h">
+      <Filter>Header Files\Tools</Filter>
+    </QtMoc>
+    <QtMoc Include="McDBTools.h">
+      <Filter>Header Files\Tools</Filter>
+    </QtMoc>
+    <QtMoc Include="McMusicMan.h">
+      <Filter>Header Files\Tools</Filter>
+    </QtMoc>
+    <QtMoc Include="McTableView.h">
+      <Filter>Header Files\Player\View\SongView</Filter>
+    </QtMoc>
+    <QtMoc Include="McTableModel.h">
+      <Filter>Header Files\Player\View\SongView</Filter>
+    </QtMoc>
+    <QtMoc Include="McSongModel.h">
+      <Filter>Header Files\Player\View\SongView</Filter>
+    </QtMoc>
+    <QtMoc Include="McSonglistModel.h">
+      <Filter>Header Files\Player\View\SonglistView</Filter>
+    </QtMoc>
+    <QtMoc Include="McSongDelegate.h">
+      <Filter>Header Files\Player\View\SongView</Filter>
+    </QtMoc>
+    <QtMoc Include="McSonglistDelegate.h">
+      <Filter>Header Files\Player\View\SonglistView</Filter>
+    </QtMoc>
+    <QtMoc Include="McListView.h">
+      <Filter>Header Files\Player\View\PlaylistView</Filter>
+    </QtMoc>
+    <QtMoc Include="McPlaylistModel.h">
+      <Filter>Header Files\Player\View\PlaylistView</Filter>
+    </QtMoc>
+    <QtMoc Include="McPlaylistDelegate.h">
+      <Filter>Header Files\Player\View\PlaylistView</Filter>
+    </QtMoc>
+    <QtMoc Include="LyricWidget.h">
+      <Filter>Header Files\Player\Lyric</Filter>
+    </QtMoc>
+    <QtMoc Include="LyricLabel.h">
+      <Filter>Header Files\Player\Lyric</Filter>
+    </QtMoc>
+    <QtMoc Include="UntranslatedLyricWidget.h">
+      <Filter>Header Files\Player\Lyric</Filter>
+    </QtMoc>
+    <QtMoc Include="TranslatedLyricWidget.h">
+      <Filter>Header Files\Player\Lyric</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="McAudioPlayer.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Lyric.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="McAudioPlayer.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="McGlobal.h">
+      <Filter>Header Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="McMusicApiInterface.h">
+      <Filter>Header Files\MusicApi</Filter>
+    </ClInclude>
+    <ClInclude Include="McYApi.h">
+      <Filter>Header Files\MusicApi</Filter>
+    </ClInclude>
+    <ClInclude Include="McQQApi.h">
+      <Filter>Header Files\MusicApi</Filter>
+    </ClInclude>
+    <ClInclude Include="McMusicApiFactory.h">
+      <Filter>Header Files\MusicApi</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

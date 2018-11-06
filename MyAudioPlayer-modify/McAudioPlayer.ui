@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>McAudioPlayer</class>
+ <widget class="QWidget" name="McAudioPlayer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>McAudioPlayer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="McAudioPlayer.qrc">
+    <normaloff>:/McAudioPlayer/data/icon/AudioPlayer.png</normaloff>:/McAudioPlayer/data/icon/AudioPlayer.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#McAudioPlayer{
+	background-color:rgba(107, 21, 0, 255);
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="5" column="0">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="localSongButton">
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="McAudioPlayer.qrc">
+         <normaloff>:/McAudioPlayer/data/icon/localSong.png</normaloff>:/McAudioPlayer/data/icon/localSong.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>74</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="networkSearchBackButton">
+       <property name="maximumSize">
+        <size>
+         <width>31</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#networkSearchBackButton:!hover{ background-color:rgba(255, 255, 255, 0); color:rgb(97, 97, 97); }QPushButton#networkSearchBackButton:hover{ background-color:rgba(255, 255, 255, 0); color:rgb(150, 150, 150); }</string>
+       </property>
+       <property name="text">
+        <string>返回</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="networkSearchButton">
+       <property name="maximumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#networkSearchButton{
+	background-color:rgba(255, 255, 255, 0);
+}
+QPushButton#networkSearchButton:!hover{
+	border-image:url(:/McAudioPlayer/data/icon/search.png);
+}
+QPushButton#networkSearchButton:hover{
+	border-image:url(:/McAudioPlayer/data/icon/search_hover.png);
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="searchSrcBox">
+       <item>
+        <property name="text">
+         <string>ymusic</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>qqmusic</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="1">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="3" column="6" rowspan="2">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="playOrderButton">
+         <property name="maximumSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="accessibleName">
+          <string>shuffle</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="McAudioPlayer.qrc">
+           <normaloff>:/McAudioPlayer/data/icon/shuffle.png</normaloff>:/McAudioPlayer/data/icon/shuffle.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>5</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0" rowspan="4">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="previousButton">
+         <property name="maximumSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#previousButton{
+	background-color:rgba(255, 255, 255, 0);
+}
+QPushButton#previousButton:hover{
+	border-image:url(:/McAudioPlayer/data/icon/previous_hover.png);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="McAudioPlayer.qrc">
+           <normaloff>:/McAudioPlayer/data/icon/previous.png</normaloff>:/McAudioPlayer/data/icon/previous.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="playButton">
+         <property name="maximumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="accessibleName">
+          <string>play</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="McAudioPlayer.qrc">
+           <normaloff>:/McAudioPlayer/data/icon/play.png</normaloff>:/McAudioPlayer/data/icon/play.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="nextButton">
+         <property name="maximumSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#nextButton{
+	background-color:rgba(255, 255, 255, 0);
+}
+QPushButton#nextButton:hover{
+	border-image:url(:/McAudioPlayer/data/icon/next_hover.png);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="McAudioPlayer.qrc">
+           <normaloff>:/McAudioPlayer/data/icon/next.png</normaloff>:/McAudioPlayer/data/icon/next.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="2">
+      <widget class="McSlider" name="positionSlider">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*首先是设置主体*/
+QSlider#positionSlider{
+	border-color: #bcbcbc;
+}
+QSlider::groove:horizontal {                                
+	border: 1px solid #999999;          
+	height: 1px;                                           
+	margin: 0px 0;                                         
+	left: 5px; right: 5px; 
+}
+/*设置中间的那个滑动的键*/
+QSlider::handle:horizontal {                               
+	border: 0px ;                           
+	border-image:  url(:/McAudioPlayer/data/icon/Slider_handle.png);
+	width: 15px;                                           
+	margin: -7px -7px -7px -7px;                  
+} 
+/*还没有滑上去的地方*/
+QSlider::add-page:horizontal{
+	border-image:  url(:/McAudioPlayer/data/icon/Slider_bar.png);
+	background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #bcbcbc, stop:0.25 #bcbcbc, stop:0.5 #bcbcbc, stop:1 #bcbcbc); 
+}
+/*已经划过的从地方*/
+QSlider::sub-page:horizontal{                               
+	background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #439cf3, stop:0.25 #439cf3, stop:0.5 #439cf3, stop:1 #439cf3);                     
+}
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3" rowspan="2">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="lyricButton">
+         <property name="maximumSize">
+          <size>
+           <width>21</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#lyricButton:!hover{ background-color:rgba(255, 255, 255, 0); color:rgb(97, 97, 97); }QPushButton#lyricButton:hover{ background-color:rgba(255, 255, 255, 0); color:rgb(150, 150, 150); }</string>
+         </property>
+         <property name="text">
+          <string>词</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="lyricTranslatedButton">
+         <property name="maximumSize">
+          <size>
+           <width>21</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#lyricTranslatedButton:!hover{ background-color:rgba(255, 255, 255, 0); color:rgb(97, 97, 97); }QPushButton#lyricTranslatedButton:hover{ background-color:rgba(255, 255, 255, 0); color:rgb(150, 150, 150); }</string>
+         </property>
+         <property name="text">
+          <string>译</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="infoLabel">
+         <property name="styleSheet">
+          <string notr="true">color:rgb(120, 120, 120);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="positionLabel">
+         <property name="maximumSize">
+          <size>
+           <width>101</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(97, 97, 97);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="7" rowspan="2">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="volumeButton">
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#volumeButton{
+	background-color:rgba(255, 255, 255, 0);
+}
+QPushButton#volumeButton:hover{
+	border-image:url(:/McAudioPlayer/data/icon/volume_hover.png);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="McAudioPlayer.qrc">
+           <normaloff>:/McAudioPlayer/data/icon/volume.png</normaloff>:/McAudioPlayer/data/icon/volume.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>5</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="8" rowspan="2">
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <spacer name="verticalSpacer_13">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="playlistButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>46</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>46</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#playlistButton{
+	background-color:rgba(255, 255, 255, 0);
+	color:rgb(140, 140, 140);
+}
+QPushButton#playlistButton:hover{
+	color:rgb(222, 222, 222);
+	background-image: url(:/McAudioPlayer/data/icon/playlist_hover.png);
+    border: none;
+    background-repeat: no-repeat;
+	margin: 1 0 0 0; 
+	padding: 0 0 0 0;
+    min-height: 24px;
+    min-width: 24px;
+    max-width: 24px;
+    max-height: 24px;
+}</string>
+         </property>
+         <property name="text">
+          <string>0  </string>
+         </property>
+         <property name="icon">
+          <iconset resource="McAudioPlayer.qrc">
+           <normaloff>:/McAudioPlayer/data/icon/playlist.png</normaloff>:/McAudioPlayer/data/icon/playlist.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_14">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>5</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="6" column="1">
+    <spacer name="verticalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>109</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="searchBackButton">
+       <property name="maximumSize">
+        <size>
+         <width>31</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#searchBackButton:!hover{ background-color:rgba(255, 255, 255, 0); color:rgb(97, 97, 97); }QPushButton#searchBackButton:hover{ background-color:rgba(255, 255, 255, 0); color:rgb(150, 150, 150); }</string>
+       </property>
+       <property name="text">
+        <string>back</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="searchNextButton">
+       <property name="maximumSize">
+        <size>
+         <width>31</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#searchNextButton:!hover{ background-color:rgba(255, 255, 255, 0); color:rgb(97, 97, 97); }QPushButton#searchNextButton:hover{ background-color:rgba(255, 255, 255, 0); color:rgb(150, 150, 150); }</string>
+       </property>
+       <property name="text">
+        <string>next</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="currentListLabel">
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>131</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(200, 200, 200);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="songNumLabel">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(200, 200, 200);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="searchLineEdit">
+       <property name="maximumSize">
+        <size>
+         <width>151</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="horizontalSpacing">
+      <number>10</number>
+     </property>
+     <item row="1" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="addSonglistButton">
+         <property name="maximumSize">
+          <size>
+           <width>21</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>17</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#addSonglistButton:!hover{ background-color:rgba(255, 255, 255, 0); color:rgb(97, 97, 97); }QPushButton#addSonglistButton:hover{ background-color:rgba(255, 255, 255, 0); color:rgb(150, 150, 150); }</string>
+         </property>
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="songlistButton">
+         <property name="maximumSize">
+          <size>
+           <width>61</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#songlistButton:!hover{ background-color:rgba(255, 255, 255, 0); color:rgb(97, 97, 97); }
+QPushButton#songlistButton:hover{ background-color:rgba(255, 255, 255, 0); color:rgb(150, 150, 150); }</string>
+         </property>
+         <property name="text">
+          <string>我的歌单</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="2">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QListView" name="songlistListView">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>192</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>192</height>
+          </size>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QListView{
+	background-color:rgb(107, 21, 0);
+	border: 0px;
+	outline:0px;
+}
+
+QListView::Item{
+	border: 0px;
+	color:rgb(150, 150, 150);
+}
+
+QListView::Item:hover{
+	background:rgba(97, 97, 97, 10%); 
+}
+
+QListView::Item:selected{
+	background:rgba(97, 97, 97, 25%);  
+}
+
+QListView::Item:selected:!active{
+	background:rgba(97, 97, 97, 25%);  
+}</string>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::EditKeyPressed</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="1">
+      <widget class="McTableView" name="songTableView">
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableView{
+		color:rgb(181, 181, 181);
+        border:none;
+        background-color:rgba(107, 21, 0, 255);
+}
+QTableView::item:selected{
+        color:white;
+        background:rgb(34, 175, 75);    
+}
+QTableView::item:hover{
+        color:rgb(24, 39, 255);
+		background:rgb(28, 153, 62);
+}
+/*QTableView 左上角样式*/
+QTableView QTableCornerButton::section {
+   /*  background: red;
+    border: 2px outset red;*/
+    color: red;
+    background-color: rgb(64, 64, 64);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color: rgb(64, 64, 64);
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color:rgba(107, 21, 0, 255);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgba(107, 21, 0, 255);
+    border: 1px solid #f6f7fa;
+    border-radius:0px;
+    border-color: rgb(64, 64, 64);
+} 
+</string>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <property name="verticalScrollMode">
+        <enum>QAbstractItemView::ScrollPerPixel</enum>
+       </property>
+       <property name="showGrid">
+        <bool>false</bool>
+       </property>
+       <attribute name="horizontalHeaderHighlightSections">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="3" rowspan="7">
+    <widget class="McListView" name="playlistListView">
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListView{
+		color:rgb(181, 181, 181);
+		border:none;
+        background-color:rgba(107, 21, 0, 255);
+		outline:0px;
+}
+QListView::item{
+		border: 1px outset gray;
+		border-width: 1px 0px 0px 0px
+}
+QListView::item:selected{
+		border:none;
+        color:white;
+        background:rgb(34, 175, 75);   
+}
+QListView::item:hover{
+        color:rgb(24, 39, 255);
+		background:rgb(28, 153, 62);
+}
+/*QListView 左上角样式*/
+QListView QTableCornerButton::section {
+   /*  background: red;
+    border: 2px outset red;*/
+    color: red;
+    background-color: rgb(64, 64, 64);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color: rgb(64, 64, 64);
+ }
+</string>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>McSlider</class>
+   <extends>QSlider</extends>
+   <header>mcslider.h</header>
+  </customwidget>
+  <customwidget>
+   <class>McTableView</class>
+   <extends>QTableView</extends>
+   <header>mctableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>McListView</class>
+   <extends>QListView</extends>
+   <header>mclistview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="McAudioPlayer.qrc"/>
+ </resources>
+ <connections/>
+</ui>
